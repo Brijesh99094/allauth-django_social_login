@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.google',
     # 'allauth.socialaccount.providers.facebook',
     # 'allauth.socialaccount.providers.github',
+
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -167,3 +169,5 @@ SOCIALACCOUNT_PROVIDERS = {
 LOGIN_REDIRECT_URL = "home"
 
 LOGOUT_REDIRECT_URL = "login"
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
