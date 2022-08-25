@@ -144,3 +144,22 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 SITE_ID = 1
+
+# client id
+# 925842658767-jmuhv9t5cgk9eu3fkku7h5et853th7h6.apps.googleusercontent.com
+
+# client secreat id
+# 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
+
+
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'SCOPE': [
+            'profile',
+            'email',
+        ],
+        'AUTH_PARAMS': {
+            'access_type': 'online',
+        }
+    }
+}
