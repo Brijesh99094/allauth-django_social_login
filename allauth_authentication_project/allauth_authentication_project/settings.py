@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
 
     'allauth.socialaccount.providers.google',
-    # git 'allauth.socialaccount.providers.facebook',
+    # 'allauth.socialaccount.providers.facebook',
     # 'allauth.socialaccount.providers.github',
 ]
 
@@ -64,7 +64,7 @@ ROOT_URLCONF = 'allauth_authentication_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [ BASE_DIR / 'templates' ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -163,3 +163,7 @@ SOCIALACCOUNT_PROVIDERS = {
         }
     }
 }
+
+LOGIN_REDIRECT_URL = "home"
+
+LOGOUT_REDIRECT_URL = "login"
