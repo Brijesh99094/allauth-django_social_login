@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
 
-    #allauth section
+    # allauth section
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -66,7 +66,7 @@ ROOT_URLCONF = 'allauth_authentication_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [ BASE_DIR / 'templates' ],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -74,7 +74,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-               
+
                 # `allauth` needs this from django
                 'django.template.context_processors.request',
             ],
@@ -146,12 +146,6 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 SITE_ID = 1
-
-# client id
-# 925842658767-jmuhv9t5cgk9eu3fkku7h5et853th7h6.apps.googleusercontent.com
-
-# client secreat id
-# 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
 
 
 SOCIALACCOUNT_PROVIDERS = {
